@@ -1,0 +1,208 @@
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+/* 400 font-family: 'Spartan', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+/* 500 font-family: 'Spartan', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+/* 700 font-family: 'Spartan', sans-serif; */
+
+            /* - Font size: 15px */
+
+:root{
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body{
+      background-image: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg),url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+      background-position: top,bottom;
+      background-repeat: no-repeat;
+  }
+
+  .container{
+      margin: 4em 1.5em 0;
+  }
+
+  .header{
+      margin-bottom:30px;
+  }
+
+  .header h1{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: var(--Dark-Magenta);
+    margin-bottom: 0.7em;
+  }
+
+  .header p{
+    font-family: 'Spartan', sans-serif;
+    color: var(--Grayish-Magenta);
+    text-align: center;
+    padding: 0 1.5em;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .ratings{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+  }
+
+  .rate{
+      padding: 20px;
+      /* border: 2px solid; */
+      margin: 10px;
+      background-color: var(--Light-Grayish-Magenta);
+      font-family: 'Spartan', sans-serif;
+      font-size: 10px;
+      text-align: center;
+      border-radius: 10px;
+  }
+
+  .cards{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card{
+      border: 1px solid;
+      background-color: var(--Dark-Magenta);
+      padding: 35px;
+      margin: 0 0 20px 0;
+      border-radius: 10px;
+      color: #fff;
+  }
+
+  .hero{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    clear: both;
+  }
+
+  .card h2{
+    font-family: 'Spartan', sans-serif;
+    font-size: 13px;
+  }
+
+  .verified{
+      color: var(--Soft-Pink);
+      margin-bottom: 20px;
+      margin-top: 5px;
+      font-size: 12px;
+      font-family: 'Spartan', sans-serif;
+  }
+
+  .profile-pic{
+      float: left;
+      clip-path: circle(50% at 50% 50%);
+      image-rendering: optimizeSpeed;
+      width: 35px;
+      margin-right: 20px;
+  }
+
+  .stars{
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .stars img{
+      margin-left: 5px;
+  }
+
+  @media (min-width:700px){
+      .header{
+          margin-right: 20em;
+      }
+
+      .ratings{
+          position: absolute;
+          top: 0;
+          right: 2em;
+          margin-top: 2em;
+      }
+
+      .cards{
+          margin-top: 8em;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-gap: 1em;
+      }
+
+      .header h1{
+          font-size: 2.5em;
+      }
+  }
+
+  @media (min-width:1200px){
+    .stars{
+        float: left;
+    }
+
+    .header{
+        margin-right: 60em;
+    }
+
+    .ratings{
+        right: 10em;
+        
+    }
+
+    .rate{
+        width: 50em;
+    }
+
+    .first{
+        margin-left:35em;
+    }
+
+    .second{
+        margin-left: 40em;
+    }
+
+    .third{
+        margin-left: 45em;
+    }
+
+    
+    .card-1{
+
+    }
+
+    .card-2{
+        position: relative;
+        top: 2em;
+    }
+
+    .card-3{
+        position: relative;
+        top: 4em;
+    }
+  }
